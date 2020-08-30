@@ -10,12 +10,13 @@
       <nuxt-link :to="post.path">
         <h2>{{ post.title }}</h2>
       </nuxt-link>
-      <v-subheader>
+
+      <div class="overline">
         <v-icon small>
           mdi-information-variant
         </v-icon>
         {{ post.strapline }}
-      </v-subheader>
+      </div>
     </v-card-text>
   </div>
 </template>

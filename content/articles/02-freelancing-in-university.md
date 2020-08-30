@@ -2,7 +2,7 @@
 id: 2
 title: "What I learned from freelancing while I was in university"
 strapline: "A bit about my experience with freelancing during my university course."
-date: 2020-08-19
+date: 2020-08-24
 author: "Vinícius Arré"
 slug: "freelancing-and-university"
 ---
