@@ -1,5 +1,12 @@
 <template>
-  <v-container xl-8 lg-8 md-10 sm-12 xs-12>
+  <v-container
+    xl-8
+    lg-8
+    md-10
+    sm-12
+    xs-12
+    class="content"
+  >
     <v-card raised>
       <v-card-title>
         <div class="">
@@ -54,3 +61,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.content {
+  font-size: 20px;
+}
+</style>
