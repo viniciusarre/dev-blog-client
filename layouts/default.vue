@@ -1,7 +1,15 @@
 <template>
   <v-app dark>
     <v-navigation-drawer
-      v-model="navDrawer"
+      v-model="contentDrawer"
+      :right="false"
+      :permanent="false"
+      absolute
+    >
+      <content-card @close="contentDrawer = false" />
+    </v-navigation-drawer>
+    <v-navigation-drawer
+      v-model="aboutDrawer"
       :right="true"
       :permanent="false"
       absolute
@@ -9,9 +17,8 @@
       <v-card>
         <v-card-title class="mb-1">
           About me
-
           <v-spacer />
-          <div class="text-right" @click="navDrawer = false">
+          <div class="text-right" @click="aboutDrawer = false">
             <v-icon>mdi-close</v-icon>
           </div>
         </v-card-title>
@@ -27,6 +34,13 @@
       <v-app-bar>
         <v-btn
           icon
+          title="Content"
+          @click="contentDrawer = true"
+        >
+          <v-icon>mdi-menu</v-icon>
+        </v-btn>
+        <v-btn
+          icon
           to="/"
           title="Home"
         >
@@ -34,30 +48,24 @@
         </v-btn>
         <v-toolbar-title>Vinícius Arré's personal blog</v-toolbar-title>
         <v-spacer />
-        <span @click="navDrawer = true">
+        <span @click="aboutDrawer = true">
           <v-icon>mdi-information-outline</v-icon>
         </span>
       </v-app-bar>
     </div>
 
-    <v-container
-      pt-16
-      xl-8
-      lg-8
-      md-10
-      sm-12
-      xs-12
-    >
-      <nuxt />
-    </v-container>
+    <nuxt />
   </v-app>
 </template>
 
 <script>
+import ContentCard from '@/components/ContentCard'
 export default {
+  components: { ContentCard },
   data () {
     return {
-      navDrawer: false
+      aboutDrawer: false,
+      contentDrawer: false
     }
   }
 }
