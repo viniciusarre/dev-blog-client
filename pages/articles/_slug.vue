@@ -5,11 +5,10 @@
     md-10
     sm-12
     xs-12
-    class="content"
   >
     <v-card raised>
       <v-card-title>
-        <div class="">
+        <div class="card-title">
           {{ doc.title }}
         </div>
 
@@ -24,7 +23,7 @@
         </div>
       </v-card-title>
 
-      <v-card-text style="word-break: normal/">
+      <v-card-text class="card-content">
         <nuxt-content :document="doc" />
       </v-card-text>
     </v-card>
@@ -63,7 +62,11 @@ export default {
 </script>
 
 <style scoped>
-.content {
-  font-size: 20px;
+.card-title {
+  font-size: 22px;
+}
+.card-content {
+  word-break: normal;
+  font-size: 15px;
 }
 </style>

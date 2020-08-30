@@ -1,6 +1,5 @@
 <template>
   <v-container
-
     xl-8
     lg-6
     md-8
