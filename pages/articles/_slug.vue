@@ -7,31 +7,39 @@
     xs-12
   >
     <v-card raised>
-      <v-card-title>
-        <div class="card-title">
-          {{ doc.title }}
-        </div>
+      <div class="px-2">
+        <v-card-title>
+          <div class="card-title">
+            {{ doc.title }}
+          </div>
 
-        <v-spacer />
-        <div class="text-right overline">
-          <v-subheader>
-            <v-icon small style="margin-right: 0.5em">
-              mdi-calendar
-            </v-icon>
-            {{ formatDate(doc.date) }}
-          </v-subheader>
-        </div>
-      </v-card-title>
+          <v-spacer />
+          <div class="text-right overline">
+            <v-subheader>
+              <v-icon small style="margin-right: 0.5em">
+                mdi-calendar
+              </v-icon>
+              {{ formatDate(doc.date) }}
+            </v-subheader>
+          </div>
+        </v-card-title>
 
-      <v-card-text class="card-content">
-        <nuxt-content :document="doc" />
-      </v-card-text>
+        <v-card-text class="card-content">
+          <nuxt-content :document="doc" />
+          <v-divider />
+          <div class="mt-2">
+            <about />
+          </div>
+        </v-card-text>
+      </div>
     </v-card>
   </v-container>
 </template>
 
 <script>
+import About from '@/components/About'
 export default {
+  components: { About },
   async asyncData ({ $content, params }) {
     const docString = '/articles/' + params.slug || 'index'
     const doc = await $content(docString).fetch()
