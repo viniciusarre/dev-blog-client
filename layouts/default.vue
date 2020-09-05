@@ -1,22 +1,7 @@
 <template>
   <v-app dark>
-    <!-- <v-navigation-drawer
-      v-model="contentDrawer"
-      :right="false"
-      :permanent="false"
-      absolute
-    >
-      <content-card @close="contentDrawer = false" />
-    </v-navigation-drawer> -->
     <div>
       <v-app-bar>
-        <!-- <v-btn
-          icon
-          title="Content"
-          @click="contentDrawer = true"
-        >
-          <v-icon>mdi-menu</v-icon>
-        </v-btn> -->
         <v-btn
           icon
           to="/"
@@ -31,16 +16,3 @@
     <nuxt />
   </v-app>
 </template>
-
-<script>
-
-export default {
-
-  data () {
-    return {
-      aboutDrawer: false,
-      contentDrawer: false
-    }
-  }
-}
-</script>
