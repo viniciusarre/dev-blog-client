@@ -1,22 +1,22 @@
 <template>
   <v-app dark>
-    <v-navigation-drawer
+    <!-- <v-navigation-drawer
       v-model="contentDrawer"
       :right="false"
       :permanent="false"
       absolute
     >
       <content-card @close="contentDrawer = false" />
-    </v-navigation-drawer>
+    </v-navigation-drawer> -->
     <div>
       <v-app-bar>
-        <v-btn
+        <!-- <v-btn
           icon
           title="Content"
           @click="contentDrawer = true"
         >
           <v-icon>mdi-menu</v-icon>
-        </v-btn>
+        </v-btn> -->
         <v-btn
           icon
           to="/"
@@ -33,9 +33,9 @@
 </template>
 
 <script>
-import ContentCard from '@/components/ContentCard'
+
 export default {
-  components: { ContentCard },
+
   data () {
     return {
       aboutDrawer: false,
