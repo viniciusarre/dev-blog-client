@@ -2,7 +2,7 @@
   <div>
     <v-parallax dark src="/background.jpg">
       <v-row align="center" justify="center">
-        <v-col class="text-center" cols="12">
+        <v-col class="text-center" cols="12" fill-height>
           <h1 class="title-text">
             Good {{ periodOfDay }}!
             <br>Welcome to my blog!

@@ -27,7 +27,6 @@ export default {
   },
   async mounted () {
     const content = await this.$content('about').fetch()
-    console.log('content >> ', content)
     this.content = content
   }
 }
