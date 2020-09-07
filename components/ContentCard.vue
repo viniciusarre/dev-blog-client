@@ -46,7 +46,6 @@ export default {
   async mounted () {
     const content = await this.$content('articles').fetch()
     this.content = content
-    // content.map(c => this.getReadingTime(c))
   }
 }
 </script>
