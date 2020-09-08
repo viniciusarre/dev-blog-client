@@ -9,7 +9,7 @@
     </v-navigation-drawer>
     <!-- mobile navbar -->
 
-    <v-navigation-drawer v-model="mobileNavbar" absolute class="mobile-background hidden-md-and-up">
+    <v-navigation-drawer v-model="mobileNavbar" app class="mobile-background hidden-md-and-up">
       <div class="text-right mr-3 mt-5">
         <v-icon @click="mobileNavbar = !mobileNavbar">
           mdi-close
@@ -22,6 +22,16 @@
     </v-main>
   </v-app>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      mobileNavbar: false
+    }
+  }
+}
+</script>
 
 <style scoped>
     .aside-background {

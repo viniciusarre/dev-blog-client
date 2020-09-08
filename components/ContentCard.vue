@@ -7,7 +7,7 @@
     xs-12
   >
     <h1 class="text-center mb-10">
-      Articles
+      Posts
     </h1>
     <v-expansion-panels>
       <v-expansion-panel v-for="post in content" :key="post.slug">

@@ -13,14 +13,14 @@
       </h2>
     </div>
     <v-list v-for="item in menuItems" :key="item.title" light>
-      <v-list-item class="pl-5" :to="item.url">
+      <v-list-item class="pl-lg-5" :to="item.url">
         <v-list-item-icon>
           <v-icon class="nav-list">
             {{ item.icon }}
           </v-icon>
         </v-list-item-icon>
         <v-list-item-content>
-          <v-list-item-title class="nav-list">
+          <v-list-item-title>
             {{ item.title }}
           </v-list-item-title>
         </v-list-item-content>
