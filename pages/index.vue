@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-parallax dark src="/background.jpg">
+    <v-parallax dark src="/background.jpg" class="parallax">
       <v-row align="center" justify="center">
         <v-col class="text-center" cols="12" fill-height>
           <h1 class="title-text">
@@ -35,5 +35,8 @@ export default {
   .title-text {
     text-shadow: 1px 1px wheat;
     color: black;
+  }
+  .parallax {
+    min-height: 100vh;
   }
 </style>

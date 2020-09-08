@@ -23,16 +23,6 @@
   </v-app>
 </template>
 
-<script>
-export default {
-  data () {
-    return {
-      mobileNavbar: false
-    }
-  }
-}
-</script>
-
 <style scoped>
     .aside-background {
       background-color: lightblue;
