@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="app">
     <v-app-bar class="hidden-md-and-up" dark>
       <v-app-bar-nav-icon @click="mobileNavbar = !mobileNavbar" />
     </v-app-bar>
@@ -34,6 +34,12 @@ export default {
 </script>
 
 <style scoped>
+::-webkit-scrollbar { display: none; }
+  .app {
+      overflow-x :hidden;
+      overflow-y: hidden;
+      scrollbar-width: none;
+    }
     .aside-text {
       color: black;
     }

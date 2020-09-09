@@ -1,4 +1,4 @@
-# dev-blog-client
+# Vinícius Arré\'s personal Web Development Blog
 
 ## Build Setup
 
