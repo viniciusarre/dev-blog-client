@@ -33,23 +33,17 @@ export default {
 }
 </script>
 
-<style scoped>
-::-webkit-scrollbar { display: none; }
-  .app {
-      overflow-x :hidden;
-      overflow-y: hidden;
-      scrollbar-width: none;
-    }
+<style>
     .aside-text {
       color: black;
     }
     .aside-background {
-      background-color: lightblue;
+      background-color: lightblue !important;
       color: black;
     }
     .mobile-background {
       min-width: 100vw;
-      background-color: lightblue;
+      background-color: lightblue !important;
       color: black;
     }
     .content {
