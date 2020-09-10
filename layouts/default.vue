@@ -46,7 +46,5 @@ export default {
       background-color: lightblue !important;
       color: black;
     }
-    .content {
-      min-height: 100vh;
-    }
+
 </style>
