@@ -46,8 +46,7 @@ export default {
     }
   },
   async mounted () {
-    console.log('slug : ', this.$route.params.slug)
-    const docString = '/articles/' + this.$route.params.slug
+    const docString = 'articles/' + this.$route.params.slug
     const doc = await this.$content(docString).fetch()
     // const [doc] = docs
     this.doc = doc
