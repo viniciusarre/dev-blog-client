@@ -41,7 +41,7 @@ export default {
         },
         {
           title: 'Content',
-          url: '/content',
+          url: '/articles',
           icon: 'mdi-book-open-outline'
         }
       ]
