@@ -40,7 +40,7 @@ export default {
           icon: 'mdi-home'
         },
         {
-          title: 'Content',
+          title: 'Articles',
           url: '/articles',
           icon: 'mdi-book-open-outline'
         }
