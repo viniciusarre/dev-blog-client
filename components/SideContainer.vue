@@ -43,6 +43,12 @@ export default {
           title: 'Articles',
           url: '/articles',
           icon: 'mdi-book-open-outline'
+        },
+        {
+          title: 'About',
+          url: '/about',
+          icon: 'mdi-information'
+
         }
       ]
     }

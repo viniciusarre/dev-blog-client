@@ -25,11 +25,7 @@
         </v-card-title>
 
         <v-card-text class="card-content">
-          <nuxt-content :document="doc" />
-          <v-divider />
-          <div class="mt-2">
-            <about />
-          </div>
+          <nuxt-content :document="doc" limit="200" />
         </v-card-text>
       </div>
     </v-card>
@@ -37,9 +33,7 @@
 </template>
 
 <script>
-import About from '@/components/About'
 export default {
-  components: { About },
   data () {
     return {
       doc: {}
