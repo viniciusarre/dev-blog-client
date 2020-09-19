@@ -7,7 +7,10 @@
             Good {{ periodOfDay }}!
             <br>Welcome to my blog!
           </h1>
-          <h3> Here I share my discoverings and experiences as a Web Dev.  I hope we can learn together! </h3>
+          <h3 class="subtitle">
+            Here I share my discoverings and experiences as a Web Developer.
+            <br>  I hope we can learn together!
+          </h3>
         </v-col>
       </v-row>
     </v-parallax>
@@ -33,10 +36,21 @@ export default {
 
 <style scoped>
   .title-text {
+    vertical-align: middle;
     text-shadow: 1px 1px wheat;
     color: black;
   }
+  .subtitle {
+    text-shadow: 1px 1px black;
+    color: lightblue
+  }
   .parallax {
     min-height: 100vh;
+  }
+  .background {
+    background: rgb(173,216,230);
+    background: linear-gradient(90deg, rgba(173,216,230,1) 49%, rgba(0,0,0,1) 100%);
+    min-height: 100vh;
+    width: auto;
   }
 </style>
