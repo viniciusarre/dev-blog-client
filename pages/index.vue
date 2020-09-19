@@ -37,11 +37,11 @@ export default {
 <style scoped>
   .title-text {
     vertical-align: middle;
-    text-shadow: 1px 1px wheat;
-    color: black;
+    text-shadow: 2px 2px black;
+    color: wheat;
   }
   .subtitle {
-    text-shadow: 1px 1px black;
+    text-shadow: 2px 2px black;
     color: lightblue
   }
   .parallax {
