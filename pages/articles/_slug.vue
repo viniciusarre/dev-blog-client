@@ -25,7 +25,7 @@
         </v-card-title>
 
         <v-card-text class="card-content">
-          <nuxt-content :document="doc" limit="200" />
+          <nuxt-content :document="doc" />
         </v-card-text>
       </div>
     </v-card>

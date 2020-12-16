@@ -1,7 +1,7 @@
 <template>
   <v-container
-    xl-8
-    lg-8
+    xl-5
+    lg-5
     md-10
     sm-12
     xs-12

@@ -1,4 +1,4 @@
-
+import highlightjs from 'highlight.js'
 export default {
   /*
   ** Nuxt rendering mode
@@ -36,6 +36,7 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
+    '@/plugins/highlight.js'
   ],
   /*
   ** Auto import components
@@ -70,7 +71,17 @@ export default {
   ** See https://content.nuxtjs.org/configuration
   */
   content: {
-    liveEdit: false
+    liveEdit: false,
+    markdown: {
+      remarkPlugins: [
+        'remark-bookmarks'
+      ],
+      remarkExternalLinks: {
+        target: '_self',
+        rel: 'nofollow'
+      }
+    }
+
   },
   /*
   ** vuetify module configuration
