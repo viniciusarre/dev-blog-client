@@ -46,7 +46,7 @@ export default {
   computed: {
     sortedContent () {
       const { content } = this
-      return content.sort((a, b) => new Date(b.date) - new Date(a.date))
+      return content.filter(c => c.published === true).sort((a, b) => new Date(b.date) - new Date(a.date))
     }
   },
   async mounted () {

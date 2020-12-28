@@ -5,6 +5,7 @@ strapline: "A bit about my experience with freelancing during my university cour
 date: 2020-08-24
 author: "Vinícius Arré"
 slug: "freelancing-and-university"
+published: true
 ---
 
 I have been officially freelancing since August 2018. I had just gotten back from my exchange in Chile and I was looking to put into practice everything I had been studying so far. So I signed up to Upwork and, within a week, I got my first client.

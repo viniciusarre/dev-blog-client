@@ -5,6 +5,7 @@ strapline: "A bit more about me, the amazing journey that brought me here and wh
 date: 2020-08-18
 author: "Vinícius Arré"
 slug: "hello-world"
+published: true
 ---
 
 ### What is this blog about?
