@@ -9,14 +9,15 @@
     <h1 class="text-center mb-10">
       Articles
     </h1>
-    <v-expansion-panels>
-      <v-expansion-panel v-for="post in sortedContent" :key="post.slug">
+    <v-expansion-panels v-model="expansionPanels" multiple>
+      <v-expansion-panel
+        v-for="(post) in sortedContent"
+        :key="post.slug"
+      >
         <v-expansion-panel-header>
           <h2 @click="$emit('close')">
             {{ post.title }}
           </h2>
-          <!-- <pre>{{ post.body }}</pre> -->
-          <!-- <p> {{ readingTime[post.id] }} read </p> -->
         </v-expansion-panel-header>
         <v-expansion-panel-content>
           <div class="overline">
@@ -40,7 +41,8 @@ export default {
   data () {
     return {
       content: [],
-      readingTime: {}
+      readingTime: {},
+      expansionPanels: [0, 1, 2, 3, 4, 5]
     }
   },
   computed: {
