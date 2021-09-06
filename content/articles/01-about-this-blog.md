@@ -2,10 +2,11 @@
 id: 1
 title: "Hello World!"
 strapline: "A bit more about me, the amazing journey that brought me here and what this is blog is all about..."
-date: 2020-08-18
+date: 2018-08-18
 author: "Vinícius Arré"
 slug: "hello-world"
 published: true
+archive: true
 ---
 
 ### What is this blog about?

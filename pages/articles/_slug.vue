@@ -28,8 +28,10 @@
             </v-subheader>
           </div>
         </v-card-title>
-
         <v-card-text class="card-content">
+          <v-alert v-if="isArchive" type="warning">
+            This post was originally written in 2018, in an older version of the blog and has been republished here, since I think it can bring value to fellow developers to see the progress of my writings as well as my progress as a developer. I hope you enjoy it!
+          </v-alert>
           <nuxt-content :document="doc" />
         </v-card-text>
       </div>
@@ -60,6 +62,9 @@ export default {
       }
       return txt
     },
+    isArchive () {
+      return this.doc.archive
+    },
     readingTime () {
       const wpm = 225
       const words = this.childrenTextData.trim().split(/\s+/).length
@@ -84,12 +89,11 @@ export default {
     },
 
     formatDay (day) {
-      const final = day % 10
-      if (final === 1) {
+      if (day === 1) {
         return `${day}st`
-      } else if (final === 2) {
+      } else if (day === 2) {
         return `${day}nd`
-      } else if (final === 3) {
+      } else if (day === 3) {
         return `${day}rd`
       }
       return `${day}th`

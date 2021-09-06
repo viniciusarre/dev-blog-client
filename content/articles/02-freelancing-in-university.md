@@ -2,10 +2,11 @@
 id: 2
 title: "What I learned from freelancing while I was in university"
 strapline: "A bit about my experience with freelancing during my university course."
-date: 2020-08-24
+date: 2018-08-24
 author: "Vinícius Arré"
 slug: "freelancing-and-university"
 published: true
+archive: true
 ---
 
 I have been officially freelancing since August 2018. I had just gotten back from my exchange in Chile and I was looking to put into practice everything I had been studying so far. So I signed up to Upwork and, within a week, I got my first client.
